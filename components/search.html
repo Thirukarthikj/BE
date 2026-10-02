@@ -1,0 +1,87 @@
+    <!-- =================================================================
+         PRODUCT SEARCH SECTION
+         Find the Part You Need - Live Interactive Search & Filter
+         ================================================================= -->
+    <section id="search" class="search-section bg-alt">
+      <div class="container">
+        
+        <div class="search-box-card">
+          <div class="section-header" style="margin-bottom: 1.5rem;">
+            <span class="section-eyebrow">FAST PART IDENTIFIER</span>
+            <h2 class="section-title" style="font-size: 1.75rem;">Find the Part You Need</h2>
+          </div>
+
+          <div class="search-input-group">
+            <div class="search-bar-wrap">
+              <span class="material-symbols-outlined text-[20px]" style="color: var(--color-text-muted);">search</span>
+              <input id="partSearchInput" class="search-input" placeholder="Search by part name, machine model or part number..." type="text"/>
+            </div>
+
+            <!-- Category Filter with All Machine-Specific & Component Categories -->
+            <select id="categoryFilter" class="search-filter-select" aria-label="Filter by Category">
+              <option value="">All Categories (18)</option>
+              <optgroup label="Press Machinery Spares">
+                <option value="Komori">Komori Spare Parts</option>
+                <option value="Mitsubishi">Mitsubishi Spare Parts</option>
+                <option value="Heidelberg">Heidelberg Spare Parts</option>
+                <option value="Ryobi">Ryobi Spare Parts</option>
+                <option value="Roland">Roland Spare Parts</option>
+                <option value="KBA">KBA Spare Parts</option>
+                <option value="Shinohara">Shinohara Spare Parts</option>
+                <option value="Akiyama">Akiyama Spare Parts</option>
+                <option value="Sakurai">Sakurai Spare Parts</option>
+              </optgroup>
+              <optgroup label="Finishing, Binding &amp; Components">
+                <option value="Muller Martini">Muller Martini Spare Parts</option>
+                <option value="Shoei Folding">Shoei Folding Machine Spares</option>
+                <option value="Aster Sewing">Aster Sewing Machine Parts</option>
+                <option value="Kolbus">Kolbus Spare Parts</option>
+                <option value="Electrical">Electrical Spare Parts</option>
+                <option value="Pneumatic">Pneumatic Accessories</option>
+                <option value="Pumps">Pumps (Vacuum &amp; Air)</option>
+                <option value="Bearings">Bearings &amp; Mechanical</option>
+                <option value="RODTEP">RODTEP / Export Spares</option>
+              </optgroup>
+            </select>
+
+            <!-- Machine/Brand Filter -->
+            <select id="brandFilter" class="search-filter-select" aria-label="Filter by Brand">
+              <option value="">All Machine Brands</option>
+              <option value="Komori">Komori</option>
+              <option value="Mitsubishi">Mitsubishi</option>
+              <option value="Muller Martini">Muller Martini</option>
+              <option value="Shoei">Shoei</option>
+              <option value="Aster">Aster</option>
+              <option value="Kolbus">Kolbus</option>
+              <option value="Ryobi">Ryobi</option>
+              <option value="Heidelberg">Heidelberg</option>
+              <option value="Roland">Roland / Manroland</option>
+              <option value="KBA">KBA (Koenig &amp; Bauer)</option>
+              <option value="Shinohara">Shinohara</option>
+              <option value="Akiyama">Akiyama</option>
+              <option value="Sakurai">Sakurai</option>
+              <option value="Becker">Becker / Orion Pumps</option>
+              <option value="NTN">NTN / NSK Bearings</option>
+              <option value="SMC">SMC / Festo Pneumatics</option>
+            </select>
+          </div>
+
+          <!-- Quick Example Search Pills -->
+          <div class="search-pills-row">
+            <span class="search-pill-label">Popular Searches:</span>
+            <button type="button" class="search-pill" onclick="quickSearch('Komori')">Komori</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Mitsubishi')">Mitsubishi</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Muller Martini')">Muller Martini</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Shoei Roller')">Shoei Roller</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Aster Needle')">Aster Needle</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Kolbus Knife')">Kolbus Knife</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Ryobi')">Ryobi</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Solenoid Valve')">Solenoid Valve</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Vacuum Pump')">Vacuum Pump</button>
+            <button type="button" class="search-pill" onclick="quickSearch('NTN Bearing')">NTN Bearing</button>
+            <span id="searchCountBadge" style="display: none; margin-left: auto; font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-secondary); font-weight: 700;"></span>
+          </div>
+        </div>
+
+      </div>
+    </section>

@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#0a192f"/>
+  <title>Products Catalog & Search | Bright Engineering</title>
+  <meta name="description" content="Comprehensive inventory of printing machinery replacement parts. Live search, category filtering, OEM part numbers, specifications, and instant quotation requests."/>
+  
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <!-- Pure Vanilla CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Products Catalog & Search | Bright Engineering"/>
+  <meta property="og:description" content="Comprehensive inventory of printing machinery replacement parts. Live search, category filtering, OEM part numbers, specifications, and instant quotation requests."/>
+  <meta property="og:type" content="website"/>
+</head>
+<body>
+
+  <!-- =================================================================
+       HEADER
+       Sticky, Clean, Brand + Multi-Page Navigation + Quote + WhatsApp
+       ================================================================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo Left -->
+      <a class="logo-block" href="index.html" title="Bright Engineering">
+        <div class="logo-symbol">
+          <span class="material-symbols-outlined text-[24px]">precision_manufacturing</span>
+        </div>
+        <div class="logo-meta">
+          <span class="logo-name">BRIGHT ENGINEERING</span>
+          <span class="logo-tagline">Printing Machine Spare Parts &amp; Industrial Components</span>
+        </div>
+      </a>
+
+      <!-- Navigation Middle -->
+      <nav class="header-nav" aria-label="Main Navigation">
+        <a class="nav-link" href="index.html">Home</a>
+
+        <!-- Shop Categories Megamenu Dropdown -->
+        <div class="nav-dropdown-item">
+          <button class="dropdown-toggle" id="shopDropdownBtn" type="button" aria-expanded="false">
+            <span>Shop Categories</span>
+            <span class="material-symbols-outlined dropdown-arrow">expand_more</span>
+          </button>
+          <div class="megamenu-dropdown" id="shopDropdownMenu">
+            <div class="megamenu-header">
+              <span class="megamenu-badge">
+                <span class="material-symbols-outlined text-[16px]">precision_manufacturing</span>
+                PRODUCT CATEGORIES
+              </span>
+              <span class="megamenu-count">17 Specialized Ranges</span>
+            </div>
+            <div class="megamenu-cols">
+              <!-- Column 1: Press Machinery Spares -->
+              <div class="megamenu-col">
+                <div class="megamenu-col-heading">PRESS MACHINERY SPARES</div>
+                <ul class="megamenu-list">
+                  <li><a href="products.html?category=Komori"><span class="cat-dot"></span>Komori Spare Parts</a></li>
+                  <li><a href="products.html?category=Mitsubishi"><span class="cat-dot"></span>Mitsubishi Spare Parts</a></li>
+                  <li><a href="products.html?category=Heidelberg"><span class="cat-dot"></span>Heidelberg Spare Parts</a></li>
+                  <li><a href="products.html?category=Ryobi"><span class="cat-dot"></span>Ryobi Spare Parts</a></li>
+                  <li><a href="products.html?category=Roland"><span class="cat-dot"></span>Roland Spare Parts</a></li>
+                  <li><a href="products.html?category=KBA"><span class="cat-dot"></span>KBA Spare Parts</a></li>
+                  <li><a href="products.html?category=Shinohara"><span class="cat-dot"></span>Shinohara Spare Parts</a></li>
+                  <li><a href="products.html?category=Akiyama"><span class="cat-dot"></span>Akiyama Spare Parts</a></li>
+                  <li><a href="products.html?category=Sakurai"><span class="cat-dot"></span>Sakurai Spare Parts</a></li>
+                </ul>
+              </div>
+              <!-- Column 2: Finishing & Components -->
+              <div class="megamenu-col">
+                <div class="megamenu-col-heading">FINISHING, BINDING &amp; COMPONENTS</div>
+                <ul class="megamenu-list">
+                  <li><a href="products.html?category=Muller%20Martini"><span class="cat-dot"></span>Muller Martini Spare Parts</a></li>
+                  <li><a href="products.html?category=Shoei%20Folding"><span class="cat-dot"></span>Shoei Folding Machine Spares</a></li>
+                  <li><a href="products.html?category=Aster%20Sewing"><span class="cat-dot"></span>Aster Sewing Machine Parts</a></li>
+                  <li><a href="products.html?category=Kolbus"><span class="cat-dot"></span>Kolbus Spare Parts</a></li>
+                  <li><a href="products.html?category=Electrical"><span class="cat-dot"></span>Electrical Spare Parts</a></li>
+                  <li><a href="products.html?category=Pneumatic"><span class="cat-dot"></span>Pneumatic Accessories</a></li>
+                  <li><a href="products.html?category=Pumps"><span class="cat-dot"></span>Pumps (Vacuum &amp; Air)</a></li>
+                  <li><a href="products.html?category=Bearings"><span class="cat-dot"></span>Bearings &amp; Mechanical</a></li>
+                  <li><a href="products.html?category=RODTEP"><span class="cat-dot"></span>RODTEP / Export Spares</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="megamenu-footer">
+              <a href="categories.html" class="megamenu-footer-link" onclick="closeShopDropdown()">
+                <span>View Full Categories Directory</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </a>
+              <a href="contact.html" class="megamenu-quote-link" onclick="closeShopDropdown()">
+                <span>Request Custom Part</span>
+                <span class="material-symbols-outlined text-[14px]">send</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a class="nav-link" href="categories.html">Directory</a>
+        <a class="nav-link active" href="products.html" aria-current="page">Catalog</a>
+        <a class="nav-link" href="brands.html">Brands</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Actions Right -->
+      <div class="header-actions">
+        <!-- WhatsApp Icon -->
+        <a class="header-wa-icon" href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer" title="WhatsApp Enquiry">
+          <span class="material-symbols-outlined text-[22px]">chat</span>
+        </a>
+
+        <!-- Get a Quote Button -->
+        <a class="btn-get-quote" href="contact.html">
+          <span>Get a Quote</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle navigation">
+          <span class="material-symbols-outlined text-[24px]" id="hamburgerIcon">menu</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileNavDrawer" class="mobile-nav-drawer">
+      <ul class="mobile-nav-list">
+        <li><a class="mobile-link" href="index.html"><span>Home</span><span class="material-symbols-outlined text-[18px]">home</span></a></li>
+        <li><a class="mobile-link" href="categories.html"><span>Categories Directory</span><span class="material-symbols-outlined text-[18px]">category</span></a></li>
+        <li><a class="mobile-link active" href="products.html"><span>All Products Catalog</span><span class="material-symbols-outlined text-[18px]">inventory_2</span></a></li>
+        <li><a class="mobile-link" href="brands.html"><span>Machines &amp; Brands</span><span class="material-symbols-outlined text-[18px]">precision_manufacturing</span></a></li>
+        <li><a class="mobile-link" href="about.html"><span>About Us</span><span class="material-symbols-outlined text-[18px]">info</span></a></li>
+        <li><a class="mobile-link" href="contact.html"><span>Contact</span><span class="material-symbols-outlined text-[18px]">mail</span></a></li>
+      </ul>
+
+      <!-- Quick Category Buttons in Mobile Drawer -->
+      <div class="mobile-category-group">
+        <div class="mobile-cat-heading">Popular Categories</div>
+        <div class="mobile-cat-grid">
+          <a class="mobile-cat-btn" href="products.html?category=Komori">Komori Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Mitsubishi">Mitsubishi Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Muller%20Martini">Muller Martini</a>
+          <a class="mobile-cat-btn" href="products.html?category=Shoei%20Folding">Shoei Folding</a>
+          <a class="mobile-cat-btn" href="products.html?category=Aster%20Sewing">Aster Sewing</a>
+          <a class="mobile-cat-btn" href="products.html?category=Kolbus">Kolbus Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Ryobi">Ryobi Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Heidelberg">Heidelberg</a>
+          <a class="mobile-cat-btn" href="products.html?category=Electrical">Electrical Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Pneumatic">Pneumatic Parts</a>
+          <a class="mobile-cat-btn" href="products.html?category=Pumps">Pumps &amp; Vacuum</a>
+          <a class="mobile-cat-btn" href="products.html?category=RODTEP">RODTEP Export</a>
+        </div>
+      </div>
+
+      <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--color-border); display: flex; flex-direction: column; gap: 0.5rem;">
+        <a class="btn-primary" style="width: 100%;" href="contact.html">
+          <span>Get a Quote</span>
+        </a>
+        <a class="btn-wa" style="width: 100%;" href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer">
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>WhatsApp Us</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <!-- ============ PAGE BANNER ============ -->
+    <div class="page-banner">
+      <div class="container">
+        <nav class="page-breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="current">Products Catalog</span>
+        </nav>
+        <h1 class="page-banner-title">Industrial Spare Parts Catalog</h1>
+        <p class="page-banner-subtitle">Precision printing press replacement components, finishing spares, and pneumatic units with instant quotes and WhatsApp inquiries.</p>
+      </div>
+    </div>
+
+
+    <!-- =================================================================
+         PRODUCT SEARCH SECTION
+         Find the Part You Need - Live Interactive Search & Filter
+         ================================================================= -->
+    <section id="search" class="search-section bg-alt">
+      <div class="container">
+        
+        <div class="search-box-card">
+          <div class="section-header" style="margin-bottom: 1.5rem;">
+            <span class="section-eyebrow">FAST PART IDENTIFIER</span>
+            <h2 class="section-title" style="font-size: 1.75rem;">Find the Part You Need</h2>
+          </div>
+
+          <div class="search-input-group">
+            <div class="search-bar-wrap">
+              <span class="material-symbols-outlined text-[20px]" style="color: var(--color-text-muted);">search</span>
+              <input id="partSearchInput" class="search-input" placeholder="Search by part name, machine model or part number..." type="text"/>
+            </div>
+
+            <!-- Category Filter with All Machine-Specific & Component Categories -->
+            <select id="categoryFilter" class="search-filter-select" aria-label="Filter by Category">
+              <option value="">All Categories (18)</option>
+              <optgroup label="Press Machinery Spares">
+                <option value="Komori">Komori Spare Parts</option>
+                <option value="Mitsubishi">Mitsubishi Spare Parts</option>
+                <option value="Heidelberg">Heidelberg Spare Parts</option>
+                <option value="Ryobi">Ryobi Spare Parts</option>
+                <option value="Roland">Roland Spare Parts</option>
+                <option value="KBA">KBA Spare Parts</option>
+                <option value="Shinohara">Shinohara Spare Parts</option>
+                <option value="Akiyama">Akiyama Spare Parts</option>
+                <option value="Sakurai">Sakurai Spare Parts</option>
+              </optgroup>
+              <optgroup label="Finishing, Binding &amp; Components">
+                <option value="Muller Martini">Muller Martini Spare Parts</option>
+                <option value="Shoei Folding">Shoei Folding Machine Spares</option>
+                <option value="Aster Sewing">Aster Sewing Machine Parts</option>
+                <option value="Kolbus">Kolbus Spare Parts</option>
+                <option value="Electrical">Electrical Spare Parts</option>
+                <option value="Pneumatic">Pneumatic Accessories</option>
+                <option value="Pumps">Pumps (Vacuum &amp; Air)</option>
+                <option value="Bearings">Bearings &amp; Mechanical</option>
+                <option value="RODTEP">RODTEP / Export Spares</option>
+              </optgroup>
+            </select>
+
+            <!-- Machine/Brand Filter -->
+            <select id="brandFilter" class="search-filter-select" aria-label="Filter by Brand">
+              <option value="">All Machine Brands</option>
+              <option value="Komori">Komori</option>
+              <option value="Mitsubishi">Mitsubishi</option>
+              <option value="Muller Martini">Muller Martini</option>
+              <option value="Shoei">Shoei</option>
+              <option value="Aster">Aster</option>
+              <option value="Kolbus">Kolbus</option>
+              <option value="Ryobi">Ryobi</option>
+              <option value="Heidelberg">Heidelberg</option>
+              <option value="Roland">Roland / Manroland</option>
+              <option value="KBA">KBA (Koenig &amp; Bauer)</option>
+              <option value="Shinohara">Shinohara</option>
+              <option value="Akiyama">Akiyama</option>
+              <option value="Sakurai">Sakurai</option>
+              <option value="Becker">Becker / Orion Pumps</option>
+              <option value="NTN">NTN / NSK Bearings</option>
+              <option value="SMC">SMC / Festo Pneumatics</option>
+            </select>
+          </div>
+
+          <!-- Quick Example Search Pills -->
+          <div class="search-pills-row">
+            <span class="search-pill-label">Popular Searches:</span>
+            <button type="button" class="search-pill" onclick="quickSearch('Komori')">Komori</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Mitsubishi')">Mitsubishi</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Muller Martini')">Muller Martini</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Shoei Roller')">Shoei Roller</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Aster Needle')">Aster Needle</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Kolbus Knife')">Kolbus Knife</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Ryobi')">Ryobi</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Solenoid Valve')">Solenoid Valve</button>
+            <button type="button" class="search-pill" onclick="quickSearch('Vacuum Pump')">Vacuum Pump</button>
+            <button type="button" class="search-pill" onclick="quickSearch('NTN Bearing')">NTN Bearing</button>
+            <span id="searchCountBadge" style="display: none; margin-left: auto; font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-secondary); font-weight: 700;"></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         ALL INDUSTRIAL SPARE PARTS & COMPONENTS CATALOG
+         Comprehensive Product Cards with Instant Quotes & WhatsApp Links
+         ================================================================= -->
+    <section id="products-catalog" class="section bg-alt" style="border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="hero-eyebrow" style="margin-bottom: 0.5rem;">
+            <span class="hero-eyebrow-dot"></span>
+            <span>COMPONENT INVENTORY</span>
+          </div>
+          <h2 class="section-title">All Products &amp; Spare Parts</h2>
+          <p class="section-subtitle">Real-time inventory of precision-engineered replacement parts with technical verification.</p>
+        </div>
+
+        <!-- Interactive Category Tabs (Chips) -->
+        <div class="category-tabs-wrap">
+          <div class="category-tabs-scroll">
+            <button type="button" class="category-tab-btn active" data-category="All" onclick="filterByCategoryTab('All', this)">
+              <span>All Products</span>
+              <span class="category-tab-count">34</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Komori" onclick="filterByCategoryTab('Komori', this)">
+              <span>Komori</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Mitsubishi" onclick="filterByCategoryTab('Mitsubishi', this)">
+              <span>Mitsubishi</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Muller Martini" onclick="filterByCategoryTab('Muller Martini', this)">
+              <span>Muller Martini</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Shoei Folding" onclick="filterByCategoryTab('Shoei Folding', this)">
+              <span>Shoei Folding</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Aster Sewing" onclick="filterByCategoryTab('Aster Sewing', this)">
+              <span>Aster Sewing</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Kolbus" onclick="filterByCategoryTab('Kolbus', this)">
+              <span>Kolbus</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Ryobi" onclick="filterByCategoryTab('Ryobi', this)">
+              <span>Ryobi</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Heidelberg" onclick="filterByCategoryTab('Heidelberg', this)">
+              <span>Heidelberg</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Roland" onclick="filterByCategoryTab('Roland', this)">
+              <span>Roland</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="KBA" onclick="filterByCategoryTab('KBA', this)">
+              <span>KBA</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Shinohara" onclick="filterByCategoryTab('Shinohara', this)">
+              <span>Shinohara</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Akiyama" onclick="filterByCategoryTab('Akiyama', this)">
+              <span>Akiyama &amp; Sakurai</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Electrical" onclick="filterByCategoryTab('Electrical', this)">
+              <span>Electrical</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Pneumatic" onclick="filterByCategoryTab('Pneumatic', this)">
+              <span>Pneumatics</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Pumps" onclick="filterByCategoryTab('Pumps', this)">
+              <span>Pumps &amp; Vacuum</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="Bearings" onclick="filterByCategoryTab('Bearings', this)">
+              <span>Bearings</span>
+            </button>
+            <button type="button" class="category-tab-btn" data-category="RODTEP" onclick="filterByCategoryTab('RODTEP', this)">
+              <span>RODTEP Export</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Catalog Items Grid (34 Comprehensive Products) -->
+        <div class="featured-grid" id="allProductsGrid">
+          
+          <!-- 1. Komori Shock Absorber -->
+          <div class="featured-card" data-category="Komori Spare Parts" data-brand="Komori" data-partno="#KSA-400-KMR">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Komori Shock Absorber Unit" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXpOAnEdWquY1rK09w17Ir433WnCOLYTg_v092-u8NsAsnFqjBgM5T4GVhp-jGVrwNddUMstnMcMoyUNXVx8PqTrPCU48D4GX7yGmDpch5evV8kbotCNCgoxVMZTS0wximXB7oCILyOEeNPjw27emeN_ybQx0zmTrXG0nQhLEwkrL7Cs0Lmn4PcUuteoJ19vORGG0Ytp91jSQtmx8pOtBySQgbUyDCOm-H_eo8rTGuMAKw8wbY-xidDg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Komori Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Komori Shock Absorber Assembly</h3>
+              <p class="featured-part-no">Part: #KSA-400-KMR</p>
+              <div class="product-compat-info">Compatible: Komori Lithrone 40 / 28 / GL-40</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Komori Shock Absorber Assembly', 'Komori', '#KSA-400-KMR')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Komori Shock Absorber Assembly', 'Komori', '#KSA-400-KMR')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 2. Komori Feeder Sucker Assembly -->
+          <div class="featured-card" data-category="Komori Spare Parts" data-brand="Komori" data-partno="#KFS-28-V">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Komori Feeder Suction Unit" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHmud4tdmH7E6jtWGFB-RHM38zfDdzLH8fvt1hzT78_5LBuDMPyiFu7pO7GuB_bJ9VwBmbZKka3VoQRzYkvX8BZHusmB8vnc2PuJH0UhvXweE1-wxnbtOyk_b4RkAXyflIr2w1okr_Kr9RE1fUMGOh_c_WNPHWsfdHlThSufJtbh8C-msHAuOUw7EF_vExGTWHAzNpOD_cwB7lSWOuq8Cu8GY1BaOlr7VcoHHns26GaQddHGxrxff3nw"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Komori Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Komori Feeder Suction Head Unit</h3>
+              <p class="featured-part-no">Part: #KFS-28-V</p>
+              <div class="product-compat-info">Compatible: Komori Lithrone GL40 / LS29 / Spica</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Komori Feeder Suction Head Unit', 'Komori', '#KFS-28-V')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Komori Feeder Suction Head Unit', 'Komori', '#KFS-28-V')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 3. Komori Ink Ductor Arm & Bush -->
+          <div class="featured-card" data-category="Komori Spare Parts" data-brand="Komori" data-partno="#KDA-GL40">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Komori Ink Ductor Arm and Bush" class="featured-img" src="images/shinohara_roller_bush.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Komori Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Komori Ink Ductor Arm &amp; Bush</h3>
+              <p class="featured-part-no">Part: #KDA-GL40</p>
+              <div class="product-compat-info">Compatible: Komori Lithrone Series Inking Units</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Komori Ink Ductor Arm & Bush', 'Komori', '#KDA-GL40')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Komori Ink Ductor Arm & Bush', 'Komori', '#KDA-GL40')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 4. Mitsubishi Ink Key Motor -->
+          <div class="featured-card" data-category="Mitsubishi Spare Parts" data-brand="Mitsubishi" data-partno="#IKM-24V-MITS">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Mitsubishi Ink Key Motor" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEucP6oeXTSjQ6JhM_g-BCtyvVVt6kp2G11HmmI5mLqcKiAIMWFuQWCddMe5Ou7TMZkVhk9DKhu4a3Jp3rrSxQUgcV8id_5fUdRFlznFcdDXp7Zzr9uSvbAiKF7IgntOADY4OgkNRq_hY4t65qCj5bLdNWmmx_2oxHj5miwXY7kN-IWuHmCiszHDQzGE6AjfyPumPYejdtTj9fB3Rdw4rpIMzHtQcwUhD-U6udhen2cwB7d9bilLN49g"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Mitsubishi Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Mitsubishi Ink Key Motor (24V DC)</h3>
+              <p class="featured-part-no">Part: #IKM-24V-MITS</p>
+              <div class="product-compat-info">Compatible: Mitsubishi Diamond 3000 / D1000 / 3000R</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Mitsubishi Ink Key Motor (24V DC)', 'Mitsubishi', '#IKM-24V-MITS')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Mitsubishi Ink Key Motor (24V DC)', 'Mitsubishi', '#IKM-24V-MITS')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 5. Mitsubishi Lifting Sucker -->
+          <div class="featured-card" data-category="Mitsubishi Spare Parts" data-brand="Mitsubishi" data-partno="#VCM-32-PU">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Mitsubishi Lifting Sucker Cup" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHmud4tdmH7E6jtWGFB-RHM38zfDdzLH8fvt1hzT78_5LBuDMPyiFu7pO7GuB_bJ9VwBmbZKka3VoQRzYkvX8BZHusmB8vnc2PuJH0UhvXweE1-wxnbtOyk_b4RkAXyflIr2w1okr_Kr9RE1fUMGOh_c_WNPHWsfdHlThSufJtbh8C-msHAuOUw7EF_vExGTWHAzNpOD_cwB7lSWOuq8Cu8GY1BaOlr7VcoHHns26GaQddHGxrxff3nw"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Mitsubishi Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Mitsubishi Sheet Lifting Sucker Cup</h3>
+              <p class="featured-part-no">Part: #VCM-32-PU</p>
+              <div class="product-compat-info">Compatible: Mitsubishi Feeder Head Suction Assembly</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Mitsubishi Sheet Lifting Sucker Cup', 'Mitsubishi', '#VCM-32-PU')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Mitsubishi Sheet Lifting Sucker Cup', 'Mitsubishi', '#VCM-32-PU')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 6. Mitsubishi Gripper Finger & Pad -->
+          <div class="featured-card" data-category="Mitsubishi Spare Parts" data-brand="Mitsubishi" data-partno="#MGP-700-HD">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Mitsubishi Gripper Finger and Pad" class="featured-img" src="images/heidelberg_gripper_pad.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Mitsubishi Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Mitsubishi Gripper Finger &amp; Pad</h3>
+              <p class="featured-part-no">Part: #MGP-700-HD</p>
+              <div class="product-compat-info">Compatible: Mitsubishi Diamond 1000 / 3000 Cylinder</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Mitsubishi Gripper Finger & Pad', 'Mitsubishi', '#MGP-700-HD')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Mitsubishi Gripper Finger & Pad', 'Mitsubishi', '#MGP-700-HD')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 7. Muller Martini Stitching Head -->
+          <div class="featured-card" data-category="Muller Martini Spare Parts" data-brand="Muller Martini" data-partno="#MMS-HK75">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Muller Martini Stitching Head HK 75/45" class="featured-img" src="images/muller_stitching_head.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Muller Martini</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Muller Martini Stitching Head (HK 75/45)</h3>
+              <p class="featured-part-no">Part: #MMS-HK75</p>
+              <div class="product-compat-info">Compatible: Muller Martini Presto / Bravo / Primera / 321</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Muller Martini Stitching Head (HK 75/45)', 'Muller Martini', '#MMS-HK75')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Muller Martini Stitching Head (HK 75/45)', 'Muller Martini', '#MMS-HK75')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 8. Muller Martini Trimmer Cutting Blade -->
+          <div class="featured-card" data-category="Muller Martini Spare Parts" data-brand="Muller Martini" data-partno="#MM-TK88">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Muller Martini Trimmer Knife Blade" class="featured-img" src="images/kolbus_trimmer_knife.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Muller Martini</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Muller Martini 3-Knife Trimmer Blade</h3>
+              <p class="featured-part-no">Part: #MM-TK88</p>
+              <div class="product-compat-info">Compatible: Zenith &amp; Granit Trimmer Units</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Muller Martini 3-Knife Trimmer Blade', 'Muller Martini', '#MM-TK88')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Muller Martini 3-Knife Trimmer Blade', 'Muller Martini', '#MM-TK88')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 9. Shoei Polyurethane Spiral Fold Roller -->
+          <div class="featured-card" data-category="Shoei Folding Machine Spares" data-brand="Shoei" data-partno="#SFR-56-PU">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Shoei Spiral Fold Roller" class="featured-img" src="images/shoei_spiral_roller.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Shoei Folding</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Shoei Polyurethane Spiral Fold Roller</h3>
+              <p class="featured-part-no">Part: #SFR-56-PU</p>
+              <div class="product-compat-info">Compatible: Shoei Star 56 / 66 / 74 / Combo Series</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Shoei Polyurethane Spiral Fold Roller', 'Shoei', '#SFR-56-PU')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Shoei Polyurethane Spiral Fold Roller', 'Shoei', '#SFR-56-PU')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 10. Shoei Folding Machine Sensor -->
+          <div class="featured-card" data-category="Shoei Folding Machine Spares" data-brand="Shoei" data-partno="#FMS-902-SH">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Shoei Folding Machine Sensor" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuuCY45TAiu27Mt-KfhEznDU8Rik_Yvsnb3QxKFohVrKAvqJrTiQzRFBEFGgGBtRHOpNrBNLL8JZZDggsELU7XLtqQPIrJhxOPY4FyJwbU4y7vbSZilnt2gXkWqEy4_Ns41JA5e6xR0_w0gRHrGeTne4zDU_vWr-Jsinwv7VqsUaYnmeK_UMXTcO2r5TWECNjN3pRzT1lA6JlUoFIefpUL_EoZytq54igy-vu7qSy20jnyE5e1P3hSzQ"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Shoei Folding</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Shoei Sheet Detect Sensor Assembly</h3>
+              <p class="featured-part-no">Part: #FMS-902-SH</p>
+              <div class="product-compat-info">Compatible: Shoei Paper Feed &amp; Jam Detection Units</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Shoei Sheet Detect Sensor Assembly', 'Shoei', '#FMS-902-SH')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Shoei Sheet Detect Sensor Assembly', 'Shoei', '#FMS-902-SH')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 11. Aster Book Sewing Needles -->
+          <div class="featured-card" data-category="Aster Sewing Machine Parts" data-brand="Aster" data-partno="#AST-ND-180">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Aster Book Sewing Needles and Hooks" class="featured-img" src="images/aster_sewing_needles.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Aster Sewing</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Aster Book Sewing Needles (Pack of 50)</h3>
+              <p class="featured-part-no">Part: #AST-ND-180</p>
+              <div class="product-compat-info">Compatible: Aster 160 / 180 / 220 / Uniplex Series</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Aster Book Sewing Needles (Pack of 50)', 'Aster', '#AST-ND-180')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Aster Book Sewing Needles (Pack of 50)', 'Aster', '#AST-ND-180')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 12. Aster Sewing Gripper Arm Assembly -->
+          <div class="featured-card" data-category="Aster Sewing Machine Parts" data-brand="Aster" data-partno="#AST-GA-200">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Aster Sewing Gripper Arm Assembly" class="featured-img" src="images/heidelberg_gripper_pad.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Aster Sewing</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Aster Sewing Gripper Arm Assembly</h3>
+              <p class="featured-part-no">Part: #AST-GA-200</p>
+              <div class="product-compat-info">Compatible: Aster Automatic Book Sewing Saddles</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Aster Sewing Gripper Arm Assembly', 'Aster', '#AST-GA-200')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Aster Sewing Gripper Arm Assembly', 'Aster', '#AST-GA-200')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 13. Kolbus Bookbinding Trimmer Knife -->
+          <div class="featured-card" data-category="Kolbus Spare Parts" data-brand="Kolbus" data-partno="#KOL-TK-300">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Kolbus Bookbinding Trimmer Knife" class="featured-img" src="images/kolbus_trimmer_knife.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Kolbus Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Kolbus 3-Knife Trimmer Blade</h3>
+              <p class="featured-part-no">Part: #KOL-TK-300</p>
+              <div class="product-compat-info">Compatible: Kolbus HD 130 / HD 140 / HD 150 Trimmers</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Kolbus 3-Knife Trimmer Blade', 'Kolbus', '#KOL-TK-300')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Kolbus 3-Knife Trimmer Blade', 'Kolbus', '#KOL-TK-300')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 14. Kolbus Casing-in Sucker Cup Unit -->
+          <div class="featured-card" data-category="Kolbus Spare Parts" data-brand="Kolbus" data-partno="#KOL-SC-55">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Kolbus Casing-in Sucker" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHmud4tdmH7E6jtWGFB-RHM38zfDdzLH8fvt1hzT78_5LBuDMPyiFu7pO7GuB_bJ9VwBmbZKka3VoQRzYkvX8BZHusmB8vnc2PuJH0UhvXweE1-wxnbtOyk_b4RkAXyflIr2w1okr_Kr9RE1fUMGOh_c_WNPHWsfdHlThSufJtbh8C-msHAuOUw7EF_vExGTWHAzNpOD_cwB7lSWOuq8Cu8GY1BaOlr7VcoHHns26GaQddHGxrxff3nw"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Kolbus Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Kolbus Casing-in Sucker Cup Unit</h3>
+              <p class="featured-part-no">Part: #KOL-SC-55</p>
+              <div class="product-compat-info">Compatible: Kolbus BF 511 / BF 512 Hardcover Systems</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Kolbus Casing-in Sucker Cup Unit', 'Kolbus', '#KOL-SC-55')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Kolbus Casing-in Sucker Cup Unit', 'Kolbus', '#KOL-SC-55')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 15. Ryobi Ink Duct Key Blade -->
+          <div class="featured-card" data-category="Ryobi Spare Parts" data-brand="Ryobi" data-partno="#RY-IDB-520">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Ryobi Ink Duct Key Blade" class="featured-img" src="images/ryobi_ink_blade.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Ryobi Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Ryobi Ink Duct Key Blade</h3>
+              <p class="featured-part-no">Part: #RY-IDB-520</p>
+              <div class="product-compat-info">Compatible: Ryobi 520 / 680 / 750 / 920 Presses</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Ryobi Ink Duct Key Blade', 'Ryobi', '#RY-IDB-520')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Ryobi Ink Duct Key Blade', 'Ryobi', '#RY-IDB-520')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 16. Ryobi Feeder Sheet Separator Rubber Sucker -->
+          <div class="featured-card" data-category="Ryobi Spare Parts" data-brand="Ryobi" data-partno="#RY-RS-15B">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Ryobi Rubber Sucker" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHmud4tdmH7E6jtWGFB-RHM38zfDdzLH8fvt1hzT78_5LBuDMPyiFu7pO7GuB_bJ9VwBmbZKka3VoQRzYkvX8BZHusmB8vnc2PuJH0UhvXweE1-wxnbtOyk_b4RkAXyflIr2w1okr_Kr9RE1fUMGOh_c_WNPHWsfdHlThSufJtbh8C-msHAuOUw7EF_vExGTWHAzNpOD_cwB7lSWOuq8Cu8GY1BaOlr7VcoHHns26GaQddHGxrxff3nw"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Ryobi Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Ryobi Feeder Separator Rubber Sucker</h3>
+              <p class="featured-part-no">Part: #RY-RS-15B</p>
+              <div class="product-compat-info">Compatible: Ryobi 524 / 754 Feeder Suction Heads</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Ryobi Feeder Separator Rubber Sucker', 'Ryobi', '#RY-RS-15B')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Ryobi Feeder Separator Rubber Sucker', 'Ryobi', '#RY-RS-15B')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 17. Heidelberg Speedmaster Gripper Pad -->
+          <div class="featured-card" data-category="Heidelberg Spare Parts" data-brand="Heidelberg" data-partno="#HG-GP-SM74">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Heidelberg Speedmaster Gripper Pad" class="featured-img" src="images/heidelberg_gripper_pad.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Heidelberg</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Heidelberg Gripper Pad &amp; Bar Tip</h3>
+              <p class="featured-part-no">Part: #HG-GP-SM74</p>
+              <div class="product-compat-info">Compatible: Heidelberg SM 52 / SM 74 / SM 102 / CD 102</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Heidelberg Gripper Pad & Bar Tip', 'Heidelberg', '#HG-GP-SM74')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Heidelberg Gripper Pad & Bar Tip', 'Heidelberg', '#HG-GP-SM74')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 18. Heidelberg Ink Fountain Motor -->
+          <div class="featured-card" data-category="Heidelberg Spare Parts" data-brand="Heidelberg" data-partno="#HG-IFM-24">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Heidelberg Ink Fountain Motor" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEucP6oeXTSjQ6JhM_g-BCtyvVVt6kp2G11HmmI5mLqcKiAIMWFuQWCddMe5Ou7TMZkVhk9DKhu4a3Jp3rrSxQUgcV8id_5fUdRFlznFcdDXp7Zzr9uSvbAiKF7IgntOADY4OgkNRq_hY4t65qCj5bLdNWmmx_2oxHj5miwXY7kN-IWuHmCiszHDQzGE6AjfyPumPYejdtTj9fB3Rdw4rpIMzHtQcwUhD-U6udhen2cwB7d9bilLN49g"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Heidelberg</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Heidelberg Ink Fountain Motor Drive</h3>
+              <p class="featured-part-no">Part: #HG-IFM-24</p>
+              <div class="product-compat-info">Compatible: Heidelberg CPC Inker Drive Assemblies</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Heidelberg Ink Fountain Motor Drive', 'Heidelberg', '#HG-IFM-24')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Heidelberg Ink Fountain Motor Drive', 'Heidelberg', '#HG-IFM-24')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 19. Roland Sheet Separation Sucker -->
+          <div class="featured-card" data-category="Roland Spare Parts" data-brand="Roland" data-partno="#RL-SSS-25">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Roland Sheet Separation Sucker" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHmud4tdmH7E6jtWGFB-RHM38zfDdzLH8fvt1hzT78_5LBuDMPyiFu7pO7GuB_bJ9VwBmbZKka3VoQRzYkvX8BZHusmB8vnc2PuJH0UhvXweE1-wxnbtOyk_b4RkAXyflIr2w1okr_Kr9RE1fUMGOh_c_WNPHWsfdHlThSufJtbh8C-msHAuOUw7EF_vExGTWHAzNpOD_cwB7lSWOuq8Cu8GY1BaOlr7VcoHHns26GaQddHGxrxff3nw"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Roland Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Roland Sheet Separation Sucker Disc</h3>
+              <p class="featured-part-no">Part: #RL-SSS-25</p>
+              <div class="product-compat-info">Compatible: Manroland 200 / 300 / 700 / 900 Presses</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Roland Sheet Separation Sucker Disc', 'Roland', '#RL-SSS-25')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Roland Sheet Separation Sucker Disc', 'Roland', '#RL-SSS-25')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 20. Manroland Ink Duct Servo Motor -->
+          <div class="featured-card" data-category="Roland Spare Parts" data-brand="Roland" data-partno="#MR-IDM-700">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Manroland Ink Duct Servo Motor" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEucP6oeXTSjQ6JhM_g-BCtyvVVt6kp2G11HmmI5mLqcKiAIMWFuQWCddMe5Ou7TMZkVhk9DKhu4a3Jp3rrSxQUgcV8id_5fUdRFlznFcdDXp7Zzr9uSvbAiKF7IgntOADY4OgkNRq_hY4t65qCj5bLdNWmmx_2oxHj5miwXY7kN-IWuHmCiszHDQzGE6AjfyPumPYejdtTj9fB3Rdw4rpIMzHtQcwUhD-U6udhen2cwB7d9bilLN49g"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Roland Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Manroland Ink Duct Servo Motor</h3>
+              <p class="featured-part-no">Part: #MR-IDM-700</p>
+              <div class="product-compat-info">Compatible: Manroland 700 / 800 ColorPilot Consoles</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Manroland Ink Duct Servo Motor', 'Roland', '#MR-IDM-700')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Manroland Ink Duct Servo Motor', 'Roland', '#MR-IDM-700')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 21. KBA Rapida Blanket Wash Cylinder -->
+          <div class="featured-card" data-category="KBA Spare Parts" data-brand="KBA" data-partno="#KBA-BWC-105">
+            <div>
+              <div class="featured-img-box">
+                <img alt="KBA Rapida Blanket Wash Cylinder" class="featured-img" src="images/kba_blanket_wash.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">KBA Spares</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">KBA Rapida Blanket Wash Cylinder</h3>
+              <p class="featured-part-no">Part: #KBA-BWC-105</p>
+              <div class="product-compat-info">Compatible: KBA Rapida 105 / 106 / 74 Units</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('KBA Rapida Blanket Wash Cylinder', 'KBA', '#KBA-BWC-105')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('KBA Rapida Blanket Wash Cylinder', 'KBA', '#KBA-BWC-105')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 22. Shinohara Ink Vibrator Roller Bushing -->
+          <div class="featured-card" data-category="Shinohara Spare Parts" data-brand="Shinohara" data-partno="#SH-IVB-66">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Shinohara Ink Vibrator Roller Bushing" class="featured-img" src="images/shinohara_roller_bush.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Shinohara</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Shinohara Ink Vibrator Roller Bushing</h3>
+              <p class="featured-part-no">Part: #SH-IVB-66</p>
+              <div class="product-compat-info">Compatible: Shinohara 52 / 66 / 75 IV / V Series</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Shinohara Ink Vibrator Roller Bushing', 'Shinohara', '#SH-IVB-66')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Shinohara Ink Vibrator Roller Bushing', 'Shinohara', '#SH-IVB-66')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 23. Akiyama Bestech Feeder Valve Head -->
+          <div class="featured-card" data-category="Akiyama Spare Parts" data-brand="Akiyama" data-partno="#AK-BFV-40">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Akiyama Bestech Feeder Valve Head" class="featured-img" src="images/akiyama_feeder_valve.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Akiyama</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Akiyama Bestech Feeder Valve Head</h3>
+              <p class="featured-part-no">Part: #AK-BFV-40</p>
+              <div class="product-compat-info">Compatible: Akiyama Bestech 40 / 44 Infeed Units</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Akiyama Bestech Feeder Valve Head', 'Akiyama', '#AK-BFV-40')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Akiyama Bestech Feeder Valve Head', 'Akiyama', '#AK-BFV-40')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 24. Sakurai Oliver Blanket Tension Bar -->
+          <div class="featured-card" data-category="Sakurai Spare Parts" data-brand="Sakurai" data-partno="#SAK-BTB-58">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Sakurai Oliver Blanket Tension Bar" class="featured-img" src="images/sakurai_tension_bar.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Sakurai</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Sakurai Oliver Blanket Tension Bar</h3>
+              <p class="featured-part-no">Part: #SAK-BTB-58</p>
+              <div class="product-compat-info">Compatible: Sakurai Oliver 58 / 66 / 72 / 466 Presses</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Sakurai Oliver Blanket Tension Bar', 'Sakurai', '#SAK-BTB-58')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Sakurai Oliver Blanket Tension Bar', 'Sakurai', '#SAK-BTB-58')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 25. Electronic Multi-Axis Control Board -->
+          <div class="featured-card" data-category="Electrical Spare Parts" data-brand="Electrical" data-partno="#ECB-880-P">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Electronic Control Board" class="featured-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Electrical</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Electronic Multi-Axis Control Board</h3>
+              <p class="featured-part-no">Part: #ECB-880-P</p>
+              <div class="product-compat-info">Compatible: Master Controller &amp; Inker Logic Units</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Electronic Multi-Axis Control Board', 'Electrical', '#ECB-880-P')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Electronic Multi-Axis Control Board', 'Electrical', '#ECB-880-P')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 26. PLC Automation I/O Module -->
+          <div class="featured-card" data-category="Electrical Spare Parts" data-brand="Electrical" data-partno="#PLC-MOD-24V">
+            <div>
+              <div class="featured-img-box">
+                <img alt="PLC Automation Module" class="featured-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Electrical</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">PLC Automation I/O Module (24V DC)</h3>
+              <p class="featured-part-no">Part: #PLC-MOD-24V</p>
+              <div class="product-compat-info">Compatible: Industrial Printing Press Automation Racks</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('PLC Automation I/O Module (24V DC)', 'Electrical', '#PLC-MOD-24V')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('PLC Automation I/O Module (24V DC)', 'Electrical', '#PLC-MOD-24V')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 27. High-Precision Industrial Proximity Sensor -->
+          <div class="featured-card" data-category="Electrical Spare Parts" data-brand="Electrical" data-partno="#PRX-M12-NPN">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Industrial Proximity Sensor" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuuCY45TAiu27Mt-KfhEznDU8Rik_Yvsnb3QxKFohVrKAvqJrTiQzRFBEFGgGBtRHOpNrBNLL8JZZDggsELU7XLtqQPIrJhxOPY4FyJwbU4y7vbSZilnt2gXkWqEy4_Ns41JA5e6xR0_w0gRHrGeTne4zDU_vWr-Jsinwv7VqsUaYnmeK_UMXTcO2r5TWECNjN3pRzT1lA6JlUoFIefpUL_EoZytq54igy-vu7qSy20jnyE5e1P3hSzQ"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Electrical</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Industrial Proximity Sensor (NPN M12)</h3>
+              <p class="featured-part-no">Part: #PRX-M12-NPN</p>
+              <div class="product-compat-info">Compatible: Cylinder Timing &amp; Sheet Gate Detection</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Industrial Proximity Sensor (NPN M12)', 'Electrical', '#PRX-M12-NPN')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Industrial Proximity Sensor (NPN M12)', 'Electrical', '#PRX-M12-NPN')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 28. 5/2-Way Pneumatic Solenoid Valve -->
+          <div class="featured-card" data-category="Pneumatic Accessories" data-brand="SMC" data-partno="#PSV-52-AIR">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Pneumatic Solenoid Valve" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWul9EBAA0rlwsUW1VtEnTnQnxyVIH9diLNPSpXIACkp2CmPJLXiXQ1Je7HLiJTnqFpqHv4J-m1JpvunE0A7xD-o6DKSB4OBY5lpL_uP0S-yABobosoVkvNlsP-kvk-CRRTqfqvOENhs4WAwhldyhcILh8FuvaXvMYOtOjolSlLbUIGupuN4h7bB_55bK3NothnJB6sRdmXfj3rGm8L5YTOJ3zm76xQxhk4hCUT8JdwqpZQX0aai0QtA"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Pneumatics</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">5/2-Way Pneumatic Solenoid Valve</h3>
+              <p class="featured-part-no">Part: #PSV-52-AIR</p>
+              <div class="product-compat-info">Compatible: Press Feeder, Suction Bar &amp; Delivery Air</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('5/2-Way Pneumatic Solenoid Valve', 'Pneumatics', '#PSV-52-AIR')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('5/2-Way Pneumatic Solenoid Valve', 'Pneumatics', '#PSV-52-AIR')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 29. Compact Pneumatic Air Cylinder -->
+          <div class="featured-card" data-category="Pneumatic Accessories" data-brand="SMC" data-partno="#PAC-32-50">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Pneumatic Air Cylinder" class="featured-img" src="images/compact_air_cylinder.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Pneumatics</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Compact Air Cylinder (32x50mm)</h3>
+              <p class="featured-part-no">Part: #PAC-32-50</p>
+              <div class="product-compat-info">Compatible: Cylinder Impression Throw-off Systems</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Compact Air Cylinder (32x50mm)', 'Pneumatics', '#PAC-32-50')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Compact Air Cylinder (32x50mm)', 'Pneumatics', '#PAC-32-50')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 30. Becker-Style Rotary Vane Vacuum Pump -->
+          <div class="featured-card" data-category="Pumps" data-brand="Becker" data-partno="#RVP-40-VAC">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Rotary Vane Vacuum Pump" class="featured-img" src="images/rotary_vacuum_pump.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Pumps &amp; Vacuum</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Rotary Vane Vacuum Pump (40 m³/h)</h3>
+              <p class="featured-part-no">Part: #RVP-40-VAC</p>
+              <div class="product-compat-info">Compatible: Offset Feeder &amp; Delivery Air Systems</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Rotary Vane Vacuum Pump (40 m³/h)', 'Pumps', '#RVP-40-VAC')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Rotary Vane Vacuum Pump (40 m³/h)', 'Pumps', '#RVP-40-VAC')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 31. High-Density Carbon Vane Replacement Pack -->
+          <div class="featured-card" data-category="Pumps" data-brand="Becker" data-partno="#CVS-70-SET">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Carbon Vanes for Vacuum Pump" class="featured-img" src="images/carbon_vanes_set.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Pumps &amp; Vacuum</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Carbon Vane Replacement Pack (Set of 7)</h3>
+              <p class="featured-part-no">Part: #CVS-70-SET</p>
+              <div class="product-compat-info">Compatible: Becker DVT 3.60 / 3.80 / Rietschle Pumps</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Carbon Vane Replacement Pack (Set of 7)', 'Pumps', '#CVS-70-SET')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Carbon Vane Replacement Pack (Set of 7)', 'Pumps', '#CVS-70-SET')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 32. NTN Deep Groove High-Precision Bearing -->
+          <div class="featured-card" data-category="Bearings & Mechanical" data-brand="NTN" data-partno="#NTN-6205-ZZ">
+            <div>
+              <div class="featured-img-box">
+                <img alt="NTN Deep Groove Bearing" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6kXnxYocB9_upnkPvWRUhlXfd9ZNaYUIf3s9oo4Zfx4j67bILv6P_EWnhXjUUY2LVB30GR_egSoTXsuw27y2XJFBvdcji_6TY8HqrTqH9SHqQ9au44YAEGPZ-W7Yv7G78-_xh04BwL8MBSnyXSvZhagN9DmtfFzF8ja-WNd2h_KI7cdtLO7K88-8j1YHVQc-OU51V2kpMep_M0P3XQ4WmGLp1l5A-d1_vDHaskagh8EKEuBhWywTw3g"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Bearings</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">NTN High-Precision Deep Groove Bearing</h3>
+              <p class="featured-part-no">Part: #NTN-6205-ZZ</p>
+              <div class="product-compat-info">Compatible: Printing Press Roller Shafts &amp; Motors</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('NTN High-Precision Deep Groove Bearing', 'NTN', '#NTN-6205-ZZ')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('NTN High-Precision Deep Groove Bearing', 'NTN', '#NTN-6205-ZZ')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 33. Cam Follower Needle Roller Bearing -->
+          <div class="featured-card" data-category="Bearings & Mechanical" data-brand="NTN" data-partno="#CF-12-BUUR">
+            <div>
+              <div class="featured-img-box">
+                <img alt="Cam Follower Needle Roller Bearing" class="featured-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6kXnxYocB9_upnkPvWRUhlXfd9ZNaYUIf3s9oo4Zfx4j67bILv6P_EWnhXjUUY2LVB30GR_egSoTXsuw27y2XJFBvdcji_6TY8HqrTqH9SHqQ9au44YAEGPZ-W7Yv7G78-_xh04BwL8MBSnyXSvZhagN9DmtfFzF8ja-WNd2h_KI7cdtLO7K88-8j1YHVQc-OU51V2kpMep_M0P3XQ4WmGLp1l5A-d1_vDHaskagh8EKEuBhWywTw3g"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">Bearings</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">Cam Follower Needle Roller Bearing</h3>
+              <p class="featured-part-no">Part: #CF-12-BUUR</p>
+              <div class="product-compat-info">Compatible: Gripper Cam Tracks &amp; Folding Drum Actuators</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('Cam Follower Needle Roller Bearing', 'NTN', '#CF-12-BUUR')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('Cam Follower Needle Roller Bearing', 'NTN', '#CF-12-BUUR')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+          <!-- 34. RODTEP Export Certified Machine Maintenance Kit -->
+          <div class="featured-card" data-category="RODTEP" data-brand="RODTEP" data-partno="#ROD-EXP-77">
+            <div>
+              <div class="featured-img-box">
+                <img alt="RODTEP Machine Maintenance Overhaul Kit" class="featured-img" src="images/carbon_vanes_set.jpg"/>
+              </div>
+              <div class="product-card-badges">
+                <span class="product-brand-tag">RODTEP Export</span>
+                <span class="product-stock-tag"><span class="product-stock-dot"></span>In Stock</span>
+              </div>
+              <h3 class="featured-title">RODTEP Export Certified Overhaul Kit</h3>
+              <p class="featured-part-no">Part: #ROD-EXP-77</p>
+              <div class="product-compat-info">Compatible: Export Grade Machine Overhauling Standard</div>
+            </div>
+            <div class="product-action-row">
+              <button type="button" class="btn-card-quote" onclick="requestPartQuote('RODTEP Export Certified Overhaul Kit', 'RODTEP', '#ROD-EXP-77')">Request Quote</button>
+              <button type="button" class="btn-card-wa" onclick="openPartWhatsApp('RODTEP Export Certified Overhaul Kit', 'RODTEP', '#ROD-EXP-77')" title="Chat on WhatsApp"><span class="material-symbols-outlined text-[18px]">chat</span></button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         PART IDENTIFICATION SECTION
+         Dark Navy Background + 3 Steps + Technician Examining Component
+         ================================================================= -->
+    <section class="identify-dark-section bg-grid-tech-dark">
+      <div class="container">
+        
+        <div class="identify-grid">
+          
+          <!-- Content Left -->
+          <div>
+            <div class="hero-eyebrow" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #ffffff;">
+              <span class="hero-eyebrow-dot" style="background: var(--color-secondary-light);"></span>
+              <span>RAPID IDENTIFICATION</span>
+            </div>
+
+            <h2 class="section-title" style="color: #ffffff; margin-top: 1rem;">
+              Can't Find Your Part?
+            </h2>
+
+            <p style="color: #94a3b8; font-size: 1.0625rem; line-height: 1.6; margin-top: 0.5rem; max-width: 580px;">
+              Send us the machine model, part number or a clear photo. We'll help identify the required component.
+            </p>
+
+            <!-- 3 Steps -->
+            <div class="identify-steps-row">
+              <div class="identify-step-box">
+                <span class="identify-step-num">01</span>
+                <span class="identify-step-title">Share Details</span>
+                <p class="identify-step-text">Send the part number, machine model or image.</p>
+              </div>
+
+              <div class="identify-step-box">
+                <span class="identify-step-num">02</span>
+                <span class="identify-step-title">Identify the Part</span>
+                <p class="identify-step-text">Our team reviews your requirement.</p>
+              </div>
+
+              <div class="identify-step-box">
+                <span class="identify-step-num">03</span>
+                <span class="identify-step-title">Get a Quote</span>
+                <p class="identify-step-text">Receive availability and quotation details.</p>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem;">
+              <a class="btn-primary" href="contact.html">
+                <span class="material-symbols-outlined text-[18px]">upload_file</span>
+                <span>Send Part Details</span>
+              </a>
+              <a class="btn-wa" href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined text-[18px]">chat</span>
+                <span>WhatsApp Us</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image Right: Technician Examining Industrial Component -->
+          <div class="identify-img-card">
+            <img alt="Engineering technician examining an industrial spare component" 
+                 class="identify-photo" 
+                 src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1200&q=85"/>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         FINAL FULL-WIDTH CTA
+         High-Quality Printing Machinery Photograph with Dark Overlay
+         ================================================================= -->
+    <section class="final-cta-section">
+      <img alt="High quality printing machinery photograph" 
+           class="final-cta-bg" 
+           src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80"/>
+      
+      <div class="container final-cta-inner">
+        <h2 class="final-cta-title">LOOKING FOR A SPECIFIC SPARE PART?</h2>
+        <p class="final-cta-text">Tell us what you need. We'll help you find the right component.</p>
+        
+        <div class="final-cta-buttons">
+          <a class="btn-primary" href="contact.html">
+            <span>REQUEST A QUOTE</span>
+            <span class="material-symbols-outlined text-[18px]">request_quote</span>
+          </a>
+          <a class="btn-wa" href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[18px]">chat</span>
+            <span>WHATSAPP US</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- =================================================================
+       FOOTER
+       Professional Dark Footer: Multi-Page Quick Links + Products + Contact
+       ================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div>
+          <div class="footer-col-title">BRIGHT ENGINEERING</div>
+          <p style="font-size: 0.875rem; color: #94a3b8; max-width: 340px; line-height: 1.6;">
+            Printing Machine Spare Parts &amp; Industrial Components. Dependable components, accurate part identification, and responsive support.
+          </p>
+        </div>
+
+        <!-- Column 1: Quick Links -->
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Category Directory</a></li>
+            <li><a href="products.html">Products Catalog</a></li>
+            <li><a href="brands.html">Machines &amp; Brands</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact &amp; Enquiry</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Machine Spares -->
+        <div>
+          <h4 class="footer-heading">Machine Spares</h4>
+          <ul class="footer-links-list">
+            <li><a href="products.html?category=Komori">Komori Spare Parts</a></li>
+            <li><a href="products.html?category=Mitsubishi">Mitsubishi Spare Parts</a></li>
+            <li><a href="products.html?category=Muller%20Martini">Muller Martini Spares</a></li>
+            <li><a href="products.html?category=Shoei%20Folding">Shoei Folding Parts</a></li>
+            <li><a href="products.html?category=Aster%20Sewing">Aster Sewing Parts</a></li>
+            <li><a href="products.html?category=Kolbus">Kolbus Spare Parts</a></li>
+            <li><a href="products.html?category=Electrical">Electrical &amp; Electronics</a></li>
+            <li><a href="products.html?category=Pneumatic">Pneumatic Components</a></li>
+            <li><a href="products.html?category=Pumps">Pumps &amp; Vacuum Parts</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact -->
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links-list">
+            <li>Phone: <a href="tel:18004827440">+1 (800) 482-7440</a></li>
+            <li>WhatsApp: <a href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer">+1 (800) 482-7440</a></li>
+            <li>Email: <a href="mailto:spares@bright-engineering.com">spares@bright-engineering.com</a></li>
+            <li>Location: 4500 Industrial Parkway, Suite 12B</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>© 2026 Bright Engineering. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =================================================================
+       FIXED MOBILE BOTTOM NAVIGATION (Call | WhatsApp | Enquire)
+       ================================================================= -->
+  <nav class="mobile-bottom-bar" aria-label="Mobile Bottom Quick Actions">
+    <a class="mobile-bottom-action" href="tel:18004827440">
+      <span class="material-symbols-outlined">call</span>
+      <span>Call</span>
+    </a>
+    <a class="mobile-bottom-action wa-action" href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer">
+      <span class="material-symbols-outlined">chat</span>
+      <span>WhatsApp</span>
+    </a>
+    <a class="mobile-bottom-action" href="contact.html">
+      <span class="material-symbols-outlined">mail</span>
+      <span>Enquire</span>
+    </a>
+  </nav>
+
+  <!-- Floating Scroll To Top Button -->
+  <button id="scrollToTopBtn" class="floating-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top">
+    <span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+  </button>
+
+
+  <!-- Main Interactive JavaScript (ES Module) -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

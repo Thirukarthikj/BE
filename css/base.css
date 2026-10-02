@@ -1,0 +1,123 @@
+/* ==========================================================================
+   BRIGHT ENGINEERING - INDUSTRIAL PRECISION DESIGN SYSTEM
+   Pure Vanilla CSS Architecture
+   Visual: Bright, Premium Industrial, Precision Engineering, B2B Trustworthy
+   ========================================================================== */
+
+/* --- 1. DESIGN TOKENS --- */
+:root {
+  /* Brand Colors */
+  --color-primary: #0a192f;           /* Deep technical navy */
+  --color-primary-light: #162a45;     /* Dark navy surface */
+  --color-secondary: #00629b;         /* Industrial Engineering Blue */
+  --color-secondary-hover: #004d77;
+  --color-secondary-light: #e0f2fe;   /* Crisp pale cyan tint */
+  --color-secondary-accent: #0284c7;  /* High-visibility vibrant blue */
+  --color-accent-amber: #f59e0b;      /* Technical notification accent */
+  --color-accent-green: #25d366;      /* WhatsApp vibrant green */
+  
+  /* Surfaces & Backgrounds */
+  --color-bg: #f8fafc;                /* Crisp clean off-white */
+  --color-bg-alt: #f1f5f9;            /* Pale metallic slate */
+  --color-surface: #ffffff;           /* Pure crisp white */
+  --color-border: #e2e8f0;
+  --color-border-hover: #00629b;
+  --color-border-dark: #1e293b;
+  
+  /* Typography Colors */
+  --color-text: #0f172a;              /* Slate 900 - High contrast */
+  --color-text-body: #334155;         /* Slate 700 */
+  --color-text-muted: #64748b;        /* Slate 500 */
+  --color-text-white: #ffffff;
+  
+  /* Fonts */
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Shadows - Minimal & Sharp */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.07), 0 2px 4px -1px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.03);
+  --shadow-hover: 0 14px 28px -4px rgba(0, 98, 155, 0.12), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
+
+  /* Border Radii - Sharp & Technical */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-full: 9999px;
+
+  /* Layout Constants */
+  --max-width: 1320px;
+  --header-height: 76px;
+  --mobile-bottom-bar-height: 60px;
+  --transition: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- 2. BASE & RESET --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 16px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-body);
+  font-family: var(--font-body);
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: var(--mobile-bottom-bar-height);
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+

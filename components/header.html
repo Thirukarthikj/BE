@@ -1,0 +1,149 @@
+  <!-- =================================================================
+       HEADER
+       Sticky, Clean, Brand + Multi-Page Navigation + Quote + WhatsApp
+       ================================================================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo Left -->
+      <a class="logo-block" href="index.html" title="Bright Engineering">
+        <div class="logo-symbol">
+          <span class="material-symbols-outlined text-[24px]">precision_manufacturing</span>
+        </div>
+        <div class="logo-meta">
+          <span class="logo-name">BRIGHT ENGINEERING</span>
+          <span class="logo-tagline">Printing Machine Spare Parts &amp; Industrial Components</span>
+        </div>
+      </a>
+
+      <!-- Navigation Middle -->
+      <nav class="header-nav" aria-label="Main Navigation">
+        <a class="nav-link" href="index.html">Home</a>
+
+        <!-- Shop Categories Megamenu Dropdown -->
+        <div class="nav-dropdown-item">
+          <button class="dropdown-toggle" id="shopDropdownBtn" type="button" aria-expanded="false">
+            <span>Shop Categories</span>
+            <span class="material-symbols-outlined dropdown-arrow">expand_more</span>
+          </button>
+          <div class="megamenu-dropdown" id="shopDropdownMenu">
+            <div class="megamenu-header">
+              <span class="megamenu-badge">
+                <span class="material-symbols-outlined text-[16px]">precision_manufacturing</span>
+                PRODUCT CATEGORIES
+              </span>
+              <span class="megamenu-count">17 Specialized Ranges</span>
+            </div>
+            <div class="megamenu-cols">
+              <!-- Column 1: Press Machinery Spares -->
+              <div class="megamenu-col">
+                <div class="megamenu-col-heading">PRESS MACHINERY SPARES</div>
+                <ul class="megamenu-list">
+                  <li><a href="products.html?category=Komori"><span class="cat-dot"></span>Komori Spare Parts</a></li>
+                  <li><a href="products.html?category=Mitsubishi"><span class="cat-dot"></span>Mitsubishi Spare Parts</a></li>
+                  <li><a href="products.html?category=Heidelberg"><span class="cat-dot"></span>Heidelberg Spare Parts</a></li>
+                  <li><a href="products.html?category=Ryobi"><span class="cat-dot"></span>Ryobi Spare Parts</a></li>
+                  <li><a href="products.html?category=Roland"><span class="cat-dot"></span>Roland Spare Parts</a></li>
+                  <li><a href="products.html?category=KBA"><span class="cat-dot"></span>KBA Spare Parts</a></li>
+                  <li><a href="products.html?category=Shinohara"><span class="cat-dot"></span>Shinohara Spare Parts</a></li>
+                  <li><a href="products.html?category=Akiyama"><span class="cat-dot"></span>Akiyama Spare Parts</a></li>
+                  <li><a href="products.html?category=Sakurai"><span class="cat-dot"></span>Sakurai Spare Parts</a></li>
+                </ul>
+              </div>
+              <!-- Column 2: Finishing & Components -->
+              <div class="megamenu-col">
+                <div class="megamenu-col-heading">FINISHING, BINDING &amp; COMPONENTS</div>
+                <ul class="megamenu-list">
+                  <li><a href="products.html?category=Muller%20Martini"><span class="cat-dot"></span>Muller Martini Spare Parts</a></li>
+                  <li><a href="products.html?category=Shoei%20Folding"><span class="cat-dot"></span>Shoei Folding Machine Spares</a></li>
+                  <li><a href="products.html?category=Aster%20Sewing"><span class="cat-dot"></span>Aster Sewing Machine Parts</a></li>
+                  <li><a href="products.html?category=Kolbus"><span class="cat-dot"></span>Kolbus Spare Parts</a></li>
+                  <li><a href="products.html?category=Electrical"><span class="cat-dot"></span>Electrical Spare Parts</a></li>
+                  <li><a href="products.html?category=Pneumatic"><span class="cat-dot"></span>Pneumatic Accessories</a></li>
+                  <li><a href="products.html?category=Pumps"><span class="cat-dot"></span>Pumps (Vacuum &amp; Air)</a></li>
+                  <li><a href="products.html?category=Bearings"><span class="cat-dot"></span>Bearings &amp; Mechanical</a></li>
+                  <li><a href="products.html?category=RODTEP"><span class="cat-dot"></span>RODTEP / Export Spares</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="megamenu-footer">
+              <a href="categories.html" class="megamenu-footer-link" onclick="closeShopDropdown()">
+                <span>View Full Categories Directory</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </a>
+              <a href="contact.html" class="megamenu-quote-link" onclick="closeShopDropdown()">
+                <span>Request Custom Part</span>
+                <span class="material-symbols-outlined text-[14px]">send</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a class="nav-link" href="categories.html">Directory</a>
+        <a class="nav-link" href="products.html">Catalog</a>
+        <a class="nav-link" href="brands.html">Brands</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Actions Right -->
+      <div class="header-actions">
+        <!-- WhatsApp Icon -->
+        <a class="header-wa-icon" href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer" title="WhatsApp Enquiry">
+          <span class="material-symbols-outlined text-[22px]">chat</span>
+        </a>
+
+        <!-- Get a Quote Button -->
+        <a class="btn-get-quote" href="contact.html">
+          <span>Get a Quote</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle navigation">
+          <span class="material-symbols-outlined text-[24px]" id="hamburgerIcon">menu</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileNavDrawer" class="mobile-nav-drawer">
+      <ul class="mobile-nav-list">
+        <li><a class="mobile-link" href="index.html"><span>Home</span><span class="material-symbols-outlined text-[18px]">home</span></a></li>
+        <li><a class="mobile-link" href="categories.html"><span>Categories Directory</span><span class="material-symbols-outlined text-[18px]">category</span></a></li>
+        <li><a class="mobile-link" href="products.html"><span>All Products Catalog</span><span class="material-symbols-outlined text-[18px]">inventory_2</span></a></li>
+        <li><a class="mobile-link" href="brands.html"><span>Machines &amp; Brands</span><span class="material-symbols-outlined text-[18px]">precision_manufacturing</span></a></li>
+        <li><a class="mobile-link" href="about.html"><span>About Us</span><span class="material-symbols-outlined text-[18px]">info</span></a></li>
+        <li><a class="mobile-link" href="contact.html"><span>Contact</span><span class="material-symbols-outlined text-[18px]">mail</span></a></li>
+      </ul>
+
+      <!-- Quick Category Buttons in Mobile Drawer -->
+      <div class="mobile-category-group">
+        <div class="mobile-cat-heading">Popular Categories</div>
+        <div class="mobile-cat-grid">
+          <a class="mobile-cat-btn" href="products.html?category=Komori">Komori Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Mitsubishi">Mitsubishi Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Muller%20Martini">Muller Martini</a>
+          <a class="mobile-cat-btn" href="products.html?category=Shoei%20Folding">Shoei Folding</a>
+          <a class="mobile-cat-btn" href="products.html?category=Aster%20Sewing">Aster Sewing</a>
+          <a class="mobile-cat-btn" href="products.html?category=Kolbus">Kolbus Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Ryobi">Ryobi Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Heidelberg">Heidelberg</a>
+          <a class="mobile-cat-btn" href="products.html?category=Electrical">Electrical Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Pneumatic">Pneumatic Parts</a>
+          <a class="mobile-cat-btn" href="products.html?category=Pumps">Pumps &amp; Vacuum</a>
+          <a class="mobile-cat-btn" href="products.html?category=RODTEP">RODTEP Export</a>
+        </div>
+      </div>
+
+      <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--color-border); display: flex; flex-direction: column; gap: 0.5rem;">
+        <a class="btn-primary" style="width: 100%;" href="contact.html">
+          <span>Get a Quote</span>
+        </a>
+        <a class="btn-wa" style="width: 100%;" href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer">
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>WhatsApp Us</span>
+        </a>
+      </div>
+    </div>
+  </header>

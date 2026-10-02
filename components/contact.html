@@ -1,0 +1,119 @@
+    <!-- =================================================================
+         CONTACT / ENQUIRY SECTION
+         Let's Talk Engineering - Clean Form + Placeholders
+         ================================================================= -->
+    <section id="contact" class="section bg-white">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Let's Talk Engineering</h2>
+          <p class="section-subtitle">Tell us what machine or spare part you are looking for.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Form -->
+          <div class="contact-form-card">
+            <form id="enquiryForm">
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="formName">Name *</label>
+                  <input id="formName" class="form-input" placeholder="e.g. Alex Morgan" required type="text"/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="formCompany">Company</label>
+                  <input id="formCompany" class="form-input" placeholder="e.g. Precision Graphic Systems" type="text"/>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="formPhone">Phone Number *</label>
+                  <input id="formPhone" class="form-input" placeholder="+1 (555) 000-0000" required type="tel"/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="formEmail">Email *</label>
+                  <input id="formEmail" class="form-input" placeholder="procurement@company.com" required type="email"/>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="formMachineBrand">Machine Brand</label>
+                  <input id="formMachineBrand" class="form-input" placeholder="e.g. Heidelberg / Komori / Mitsubishi" type="text"/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="formMachineModel">Machine Model</label>
+                  <input id="formMachineModel" class="form-input" placeholder="e.g. Speedmaster SM 74 / Lithrone 40" type="text"/>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formPartNumber">Part Number</label>
+                <input id="formPartNumber" class="form-input" placeholder="e.g. #M2.015.821 / 00.580.1234" type="text"/>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formRequirement">Requirement</label>
+                <textarea id="formRequirement" class="form-textarea" placeholder="Describe the part requirement, wear problem or machine serial..." rows="3"></textarea>
+              </div>
+
+              <!-- Upload Part Image -->
+              <div class="form-group">
+                <input type="file" id="partPhotoInput" style="display: none;" accept="image/*,.pdf"/>
+                <div class="file-upload-box" onclick="document.getElementById('partPhotoInput').click()">
+                  <span class="material-symbols-outlined text-[20px]" style="color: var(--color-secondary);">attach_file</span>
+                  <span id="fileUploadLabel">Upload Part Image or Nameplate Photo</span>
+                </div>
+              </div>
+
+              <button class="btn-primary" style="width: 100%; padding: 0.9375rem; margin-top: 0.75rem;" type="submit">
+                <span>Send Enquiry</span>
+                <span class="material-symbols-outlined text-[18px]">send</span>
+              </button>
+            </form>
+
+            <!-- Success Box -->
+            <div id="formSuccessBox" style="display: none; margin-top: 1.25rem; padding: 1.25rem; background-color: var(--color-secondary-light); border: 1px solid var(--color-secondary); border-radius: var(--radius-sm);">
+              <strong style="color: var(--color-secondary); font-family: var(--font-heading);">Enquiry Dispatched Successfully!</strong>
+              <p style="font-size: 0.875rem; color: var(--color-text-body); margin-top: 0.25rem;">
+                Your ticket <strong id="ticketNumDisplay" style="font-family: var(--font-mono);">#BE-8472</strong> has been logged. Our engineering desk will review the part specifications and reply promptly.
+              </p>
+            </div>
+          </div>
+
+          <!-- Beside the Form: Direct Contact Placeholders -->
+          <div class="contact-info-card">
+            <div class="info-brand-title">BRIGHT ENGINEERING</div>
+            
+            <div class="info-item">
+              <span class="info-item-label">Call Us</span>
+              <span class="info-item-val"><a href="tel:18004827440">+1 (800) 482-7440</a></span>
+            </div>
+
+            <div class="info-item">
+              <span class="info-item-label">WhatsApp</span>
+              <span class="info-item-val"><a href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer">+1 (800) 482-7440</a></span>
+            </div>
+
+            <div class="info-item">
+              <span class="info-item-label">Email</span>
+              <span class="info-item-val"><a href="mailto:spares@bright-engineering.com">spares@bright-engineering.com</a></span>
+            </div>
+
+            <div class="info-item">
+              <span class="info-item-label">Location</span>
+              <span class="info-item-val">4500 Industrial Parkway, Suite 12B, Engineering District</span>
+            </div>
+
+            <div class="info-item">
+              <span class="info-item-label">Working Hours</span>
+              <span class="info-item-val">Mon – Sat: 07:00 – 20:00</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>

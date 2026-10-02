@@ -1,0 +1,130 @@
+/* --- 9. PRODUCT CATEGORIES (8 Cards with Category Details) --- */
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.product-cat-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-xs);
+  transition: all var(--transition);
+}
+
+.product-cat-card:hover {
+  border-color: var(--color-secondary);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+.product-cat-img-box {
+  width: 100%;
+  height: 175px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background-color: var(--color-bg-alt);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.product-cat-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-cat-card:hover .product-cat-img {
+  transform: scale(1.06);
+}
+
+.product-cat-num {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-xs);
+  background-color: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+}
+
+.product-cat-title {
+  font-family: var(--font-heading);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-primary);
+  margin-bottom: 0.35rem;
+  transition: color var(--transition);
+}
+
+.product-cat-card:hover .product-cat-title {
+  color: var(--color-secondary);
+}
+
+.product-cat-text {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  margin-bottom: 0.5rem;
+}
+
+.product-cat-items-list {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-text-body);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.cat-bullet {
+  background-color: var(--color-bg-alt);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  border: 1px solid var(--color-border);
+}
+
+.product-cat-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-border);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  transition: gap var(--transition);
+}
+
+.product-cat-card:hover .product-cat-link {
+  gap: 0.6rem;
+}
+

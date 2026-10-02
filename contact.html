@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#0a192f"/>
+  <title>Contact Us & Request Quotation | Bright Engineering</title>
+  <meta name="description" content="Send a spare parts quotation request to Bright Engineering. Quick responses, direct WhatsApp support, and technical assistance for all printing machinery parts."/>
+  
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <!-- Pure Vanilla CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Us & Request Quotation | Bright Engineering"/>
+  <meta property="og:description" content="Send a spare parts quotation request to Bright Engineering. Quick responses, direct WhatsApp support, and technical assistance for all printing machinery parts."/>
+  <meta property="og:type" content="website"/>
+</head>
+<body>
+
+  <!-- =================================================================
+       HEADER
+       Sticky, Clean, Brand + Multi-Page Navigation + Quote + WhatsApp
+       ================================================================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo Left -->
+      <a class="logo-block" href="index.html" title="Bright Engineering">
+        <div class="logo-symbol">
+          <span class="material-symbols-outlined text-[24px]">precision_manufacturing</span>
+        </div>
+        <div class="logo-meta">
+          <span class="logo-name">BRIGHT ENGINEERING</span>
+          <span class="logo-tagline">Printing Machine Spare Parts &amp; Industrial Components</span>
+        </div>
+      </a>
+
+      <!-- Navigation Middle -->
+      <nav class="header-nav" aria-label="Main Navigation">
+        <a class="nav-link" href="index.html">Home</a>
+
+        <!-- Shop Categories Megamenu Dropdown -->
+        <div class="nav-dropdown-item">
+          <button class="dropdown-toggle" id="shopDropdownBtn" type="button" aria-expanded="false">
+            <span>Shop Categories</span>
+            <span class="material-symbols-outlined dropdown-arrow">expand_more</span>
+          </button>
+          <div class="megamenu-dropdown" id="shopDropdownMenu">
+            <div class="megamenu-header">
+              <span class="megamenu-badge">
+                <span class="material-symbols-outlined text-[16px]">precision_manufacturing</span>
+                PRODUCT CATEGORIES
+              </span>
+              <span class="megamenu-count">17 Specialized Ranges</span>
+            </div>
+            <div class="megamenu-cols">
+              <!-- Column 1: Press Machinery Spares -->
+              <div class="megamenu-col">
+                <div class="megamenu-col-heading">PRESS MACHINERY SPARES</div>
+                <ul class="megamenu-list">
+                  <li><a href="products.html?category=Komori"><span class="cat-dot"></span>Komori Spare Parts</a></li>
+                  <li><a href="products.html?category=Mitsubishi"><span class="cat-dot"></span>Mitsubishi Spare Parts</a></li>
+                  <li><a href="products.html?category=Heidelberg"><span class="cat-dot"></span>Heidelberg Spare Parts</a></li>
+                  <li><a href="products.html?category=Ryobi"><span class="cat-dot"></span>Ryobi Spare Parts</a></li>
+                  <li><a href="products.html?category=Roland"><span class="cat-dot"></span>Roland Spare Parts</a></li>
+                  <li><a href="products.html?category=KBA"><span class="cat-dot"></span>KBA Spare Parts</a></li>
+                  <li><a href="products.html?category=Shinohara"><span class="cat-dot"></span>Shinohara Spare Parts</a></li>
+                  <li><a href="products.html?category=Akiyama"><span class="cat-dot"></span>Akiyama Spare Parts</a></li>
+                  <li><a href="products.html?category=Sakurai"><span class="cat-dot"></span>Sakurai Spare Parts</a></li>
+                </ul>
+              </div>
+              <!-- Column 2: Finishing & Components -->
+              <div class="megamenu-col">
+                <div class="megamenu-col-heading">FINISHING, BINDING &amp; COMPONENTS</div>
+                <ul class="megamenu-list">
+                  <li><a href="products.html?category=Muller%20Martini"><span class="cat-dot"></span>Muller Martini Spare Parts</a></li>
+                  <li><a href="products.html?category=Shoei%20Folding"><span class="cat-dot"></span>Shoei Folding Machine Spares</a></li>
+                  <li><a href="products.html?category=Aster%20Sewing"><span class="cat-dot"></span>Aster Sewing Machine Parts</a></li>
+                  <li><a href="products.html?category=Kolbus"><span class="cat-dot"></span>Kolbus Spare Parts</a></li>
+                  <li><a href="products.html?category=Electrical"><span class="cat-dot"></span>Electrical Spare Parts</a></li>
+                  <li><a href="products.html?category=Pneumatic"><span class="cat-dot"></span>Pneumatic Accessories</a></li>
+                  <li><a href="products.html?category=Pumps"><span class="cat-dot"></span>Pumps (Vacuum &amp; Air)</a></li>
+                  <li><a href="products.html?category=Bearings"><span class="cat-dot"></span>Bearings &amp; Mechanical</a></li>
+                  <li><a href="products.html?category=RODTEP"><span class="cat-dot"></span>RODTEP / Export Spares</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="megamenu-footer">
+              <a href="categories.html" class="megamenu-footer-link" onclick="closeShopDropdown()">
+                <span>View Full Categories Directory</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </a>
+              <a href="contact.html" class="megamenu-quote-link" onclick="closeShopDropdown()">
+                <span>Request Custom Part</span>
+                <span class="material-symbols-outlined text-[14px]">send</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a class="nav-link" href="categories.html">Directory</a>
+        <a class="nav-link" href="products.html">Catalog</a>
+        <a class="nav-link" href="brands.html">Brands</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+
+      <!-- Actions Right -->
+      <div class="header-actions">
+        <!-- WhatsApp Icon -->
+        <a class="header-wa-icon" href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer" title="WhatsApp Enquiry">
+          <span class="material-symbols-outlined text-[22px]">chat</span>
+        </a>
+
+        <!-- Get a Quote Button -->
+        <a class="btn-get-quote" href="contact.html">
+          <span>Get a Quote</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle navigation">
+          <span class="material-symbols-outlined text-[24px]" id="hamburgerIcon">menu</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileNavDrawer" class="mobile-nav-drawer">
+      <ul class="mobile-nav-list">
+        <li><a class="mobile-link" href="index.html"><span>Home</span><span class="material-symbols-outlined text-[18px]">home</span></a></li>
+        <li><a class="mobile-link" href="categories.html"><span>Categories Directory</span><span class="material-symbols-outlined text-[18px]">category</span></a></li>
+        <li><a class="mobile-link" href="products.html"><span>All Products Catalog</span><span class="material-symbols-outlined text-[18px]">inventory_2</span></a></li>
+        <li><a class="mobile-link" href="brands.html"><span>Machines &amp; Brands</span><span class="material-symbols-outlined text-[18px]">precision_manufacturing</span></a></li>
+        <li><a class="mobile-link" href="about.html"><span>About Us</span><span class="material-symbols-outlined text-[18px]">info</span></a></li>
+        <li><a class="mobile-link active" href="contact.html"><span>Contact</span><span class="material-symbols-outlined text-[18px]">mail</span></a></li>
+      </ul>
+
+      <!-- Quick Category Buttons in Mobile Drawer -->
+      <div class="mobile-category-group">
+        <div class="mobile-cat-heading">Popular Categories</div>
+        <div class="mobile-cat-grid">
+          <a class="mobile-cat-btn" href="products.html?category=Komori">Komori Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Mitsubishi">Mitsubishi Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Muller%20Martini">Muller Martini</a>
+          <a class="mobile-cat-btn" href="products.html?category=Shoei%20Folding">Shoei Folding</a>
+          <a class="mobile-cat-btn" href="products.html?category=Aster%20Sewing">Aster Sewing</a>
+          <a class="mobile-cat-btn" href="products.html?category=Kolbus">Kolbus Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Ryobi">Ryobi Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Heidelberg">Heidelberg</a>
+          <a class="mobile-cat-btn" href="products.html?category=Electrical">Electrical Spares</a>
+          <a class="mobile-cat-btn" href="products.html?category=Pneumatic">Pneumatic Parts</a>
+          <a class="mobile-cat-btn" href="products.html?category=Pumps">Pumps &amp; Vacuum</a>
+          <a class="mobile-cat-btn" href="products.html?category=RODTEP">RODTEP Export</a>
+        </div>
+      </div>
+
+      <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--color-border); display: flex; flex-direction: column; gap: 0.5rem;">
+        <a class="btn-primary" style="width: 100%;" href="contact.html">
+          <span>Get a Quote</span>
+        </a>
+        <a class="btn-wa" style="width: 100%;" href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer">
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>WhatsApp Us</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <!-- ============ PAGE BANNER ============ -->
+    <div class="page-banner">
+      <div class="container">
+        <nav class="page-breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="current">Contact & Enquiry</span>
+        </nav>
+        <h1 class="page-banner-title">Contact Us & Request a Quote</h1>
+        <p class="page-banner-subtitle">Get fast pricing, confirm parts availability, or consult our engineering team for custom part identification.</p>
+      </div>
+    </div>
+
+
+    <!-- =================================================================
+         CONTACT / ENQUIRY SECTION
+         Let's Talk Engineering - Clean Form + Placeholders
+         ================================================================= -->
+    <section id="contact" class="section bg-white">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Let's Talk Engineering</h2>
+          <p class="section-subtitle">Tell us what machine or spare part you are looking for.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Form -->
+          <div class="contact-form-card">
+            <form id="enquiryForm">
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="formName">Name *</label>
+                  <input id="formName" class="form-input" placeholder="e.g. Alex Morgan" required type="text"/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="formCompany">Company</label>
+                  <input id="formCompany" class="form-input" placeholder="e.g. Precision Graphic Systems" type="text"/>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="formPhone">Phone Number *</label>
+                  <input id="formPhone" class="form-input" placeholder="+1 (555) 000-0000" required type="tel"/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="formEmail">Email *</label>
+                  <input id="formEmail" class="form-input" placeholder="procurement@company.com" required type="email"/>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="formMachineBrand">Machine Brand</label>
+                  <input id="formMachineBrand" class="form-input" placeholder="e.g. Heidelberg / Komori / Mitsubishi" type="text"/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="formMachineModel">Machine Model</label>
+                  <input id="formMachineModel" class="form-input" placeholder="e.g. Speedmaster SM 74 / Lithrone 40" type="text"/>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formPartNumber">Part Number</label>
+                <input id="formPartNumber" class="form-input" placeholder="e.g. #M2.015.821 / 00.580.1234" type="text"/>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formRequirement">Requirement</label>
+                <textarea id="formRequirement" class="form-textarea" placeholder="Describe the part requirement, wear problem or machine serial..." rows="3"></textarea>
+              </div>
+
+              <!-- Upload Part Image -->
+              <div class="form-group">
+                <input type="file" id="partPhotoInput" style="display: none;" accept="image/*,.pdf"/>
+                <div class="file-upload-box" onclick="document.getElementById('partPhotoInput').click()">
+                  <span class="material-symbols-outlined text-[20px]" style="color: var(--color-secondary);">attach_file</span>
+                  <span id="fileUploadLabel">Upload Part Image or Nameplate Photo</span>
+                </div>
+              </div>
+
+              <button class="btn-primary" style="width: 100%; padding: 0.9375rem; margin-top: 0.75rem;" type="submit">
+                <span>Send Enquiry</span>
+                <span class="material-symbols-outlined text-[18px]">send</span>
+              </button>
+            </form>
+
+            <!-- Success Box -->
+            <div id="formSuccessBox" style="display: none; margin-top: 1.25rem; padding: 1.25rem; background-color: var(--color-secondary-light); border: 1px solid var(--color-secondary); border-radius: var(--radius-sm);">
+              <strong style="color: var(--color-secondary); font-family: var(--font-heading);">Enquiry Dispatched Successfully!</strong>
+              <p style="font-size: 0.875rem; color: var(--color-text-body); margin-top: 0.25rem;">
+                Your ticket <strong id="ticketNumDisplay" style="font-family: var(--font-mono);">#BE-8472</strong> has been logged. Our engineering desk will review the part specifications and reply promptly.
+              </p>
+            </div>
+          </div>
+
+          <!-- Beside the Form: Direct Contact Placeholders -->
+          <div class="contact-info-card">
+            <div class="info-brand-title">BRIGHT ENGINEERING</div>
+            
+            <div class="info-item">
+              <span class="info-item-label">Call Us</span>
+              <span class="info-item-val"><a href="tel:18004827440">+1 (800) 482-7440</a></span>
+            </div>
+
+            <div class="info-item">
+              <span class="info-item-label">WhatsApp</span>
+              <span class="info-item-val"><a href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer">+1 (800) 482-7440</a></span>
+            </div>
+
+            <div class="info-item">
+              <span class="info-item-label">Email</span>
+              <span class="info-item-val"><a href="mailto:spares@bright-engineering.com">spares@bright-engineering.com</a></span>
+            </div>
+
+            <div class="info-item">
+              <span class="info-item-label">Location</span>
+              <span class="info-item-val">4500 Industrial Parkway, Suite 12B, Engineering District</span>
+            </div>
+
+            <div class="info-item">
+              <span class="info-item-label">Working Hours</span>
+              <span class="info-item-val">Mon – Sat: 07:00 – 20:00</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         HOW TO ORDER / ENQUIRE
+         Clean 4-Step Process
+         ================================================================= -->
+    <section class="section bg-white" style="border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">ORDERING WORKFLOW</span>
+          <h2 class="section-title">How It Works</h2>
+        </div>
+
+        <div class="how-steps-row">
+          
+          <!-- Step 1 -->
+          <div class="how-step-card">
+            <span class="how-step-badge">01 — TELL US</span>
+            <h3 class="how-step-title">Tell Us</h3>
+            <p class="how-step-desc">Share machine / part details.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="how-step-card">
+            <span class="how-step-badge">02 — IDENTIFY</span>
+            <h3 class="how-step-title">Identify</h3>
+            <p class="how-step-desc">We verify the required component.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="how-step-card">
+            <span class="how-step-badge">03 — QUOTE</span>
+            <h3 class="how-step-title">Quote</h3>
+            <p class="how-step-desc">Receive pricing and availability.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="how-step-card">
+            <span class="how-step-badge">04 — DISPATCH</span>
+            <h3 class="how-step-title">Dispatch</h3>
+            <p class="how-step-desc">Product is packed and shipped.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         DELIVERY INFORMATION
+         Safe. Secure. Delivered.
+         ================================================================= -->
+    <section class="section bg-alt" style="padding: 3.5rem 0; border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        
+        <div class="section-header text-center" style="margin-bottom: 2rem;">
+          <h2 class="section-title" style="font-size: 1.75rem;">Safe. Secure. Delivered.</h2>
+        </div>
+
+        <div class="delivery-grid">
+          
+          <div class="delivery-box">
+            <div class="delivery-icon">
+              <span class="material-symbols-outlined text-[20px]">inventory_2</span>
+            </div>
+            <span class="delivery-text">Stock Availability</span>
+          </div>
+
+          <div class="delivery-box">
+            <div class="delivery-icon">
+              <span class="material-symbols-outlined text-[20px]">shield</span>
+            </div>
+            <span class="delivery-text">Secure Packaging</span>
+          </div>
+
+          <div class="delivery-box">
+            <div class="delivery-icon">
+              <span class="material-symbols-outlined text-[20px]">local_shipping</span>
+            </div>
+            <span class="delivery-text">Courier Dispatch</span>
+          </div>
+
+          <div class="delivery-box">
+            <div class="delivery-icon">
+              <span class="material-symbols-outlined text-[20px]">public</span>
+            </div>
+            <span class="delivery-text">Delivery Across India</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- =================================================================
+       FOOTER
+       Professional Dark Footer: Multi-Page Quick Links + Products + Contact
+       ================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div>
+          <div class="footer-col-title">BRIGHT ENGINEERING</div>
+          <p style="font-size: 0.875rem; color: #94a3b8; max-width: 340px; line-height: 1.6;">
+            Printing Machine Spare Parts &amp; Industrial Components. Dependable components, accurate part identification, and responsive support.
+          </p>
+        </div>
+
+        <!-- Column 1: Quick Links -->
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Category Directory</a></li>
+            <li><a href="products.html">Products Catalog</a></li>
+            <li><a href="brands.html">Machines &amp; Brands</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact &amp; Enquiry</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Machine Spares -->
+        <div>
+          <h4 class="footer-heading">Machine Spares</h4>
+          <ul class="footer-links-list">
+            <li><a href="products.html?category=Komori">Komori Spare Parts</a></li>
+            <li><a href="products.html?category=Mitsubishi">Mitsubishi Spare Parts</a></li>
+            <li><a href="products.html?category=Muller%20Martini">Muller Martini Spares</a></li>
+            <li><a href="products.html?category=Shoei%20Folding">Shoei Folding Parts</a></li>
+            <li><a href="products.html?category=Aster%20Sewing">Aster Sewing Parts</a></li>
+            <li><a href="products.html?category=Kolbus">Kolbus Spare Parts</a></li>
+            <li><a href="products.html?category=Electrical">Electrical &amp; Electronics</a></li>
+            <li><a href="products.html?category=Pneumatic">Pneumatic Components</a></li>
+            <li><a href="products.html?category=Pumps">Pumps &amp; Vacuum Parts</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact -->
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links-list">
+            <li>Phone: <a href="tel:18004827440">+1 (800) 482-7440</a></li>
+            <li>WhatsApp: <a href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer">+1 (800) 482-7440</a></li>
+            <li>Email: <a href="mailto:spares@bright-engineering.com">spares@bright-engineering.com</a></li>
+            <li>Location: 4500 Industrial Parkway, Suite 12B</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>© 2026 Bright Engineering. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =================================================================
+       FIXED MOBILE BOTTOM NAVIGATION (Call | WhatsApp | Enquire)
+       ================================================================= -->
+  <nav class="mobile-bottom-bar" aria-label="Mobile Bottom Quick Actions">
+    <a class="mobile-bottom-action" href="tel:18004827440">
+      <span class="material-symbols-outlined">call</span>
+      <span>Call</span>
+    </a>
+    <a class="mobile-bottom-action wa-action" href="https://wa.me/18004827440" target="_blank" rel="noopener noreferrer">
+      <span class="material-symbols-outlined">chat</span>
+      <span>WhatsApp</span>
+    </a>
+    <a class="mobile-bottom-action" href="contact.html">
+      <span class="material-symbols-outlined">mail</span>
+      <span>Enquire</span>
+    </a>
+  </nav>
+
+  <!-- Floating Scroll To Top Button -->
+  <button id="scrollToTopBtn" class="floating-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top">
+    <span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+  </button>
+
+
+  <!-- Main Interactive JavaScript (ES Module) -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

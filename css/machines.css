@@ -1,0 +1,67 @@
+/* --- 12. MACHINE-SPECIFIC SECTION (4 Large Visual Cards) --- */
+.machine-types-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .machine-types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .machine-types-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.machine-type-card {
+  position: relative;
+  height: 300px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+}
+
+.machine-type-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.machine-type-card:hover .machine-type-img {
+  transform: scale(1.06);
+}
+
+.machine-type-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 25, 47, 0.95) 0%, rgba(10, 25, 47, 0.4) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  color: #ffffff;
+}
+
+.machine-type-title {
+  font-family: var(--font-heading);
+  font-size: 1.1875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.machine-type-brands {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-secondary-light);
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}
+

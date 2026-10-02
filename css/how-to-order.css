@@ -1,0 +1,59 @@
+/* --- 16. HOW TO ORDER / ENQUIRE (4 Steps) --- */
+.how-steps-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .how-steps-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .how-steps-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.how-step-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.5rem;
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all var(--transition);
+}
+
+.how-step-card:hover {
+  border-color: var(--color-secondary);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+.how-step-badge {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: var(--color-secondary);
+}
+
+.how-step-title {
+  font-family: var(--font-heading);
+  font-size: 1.0625rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.how-step-desc {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+

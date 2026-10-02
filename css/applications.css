@@ -1,0 +1,65 @@
+/* --- 15. APPLICATIONS --- */
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .app-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.app-card {
+  position: relative;
+  height: 320px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+}
+
+.app-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.app-card:hover .app-card-img {
+  transform: scale(1.06);
+}
+
+.app-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 25, 47, 0.92) 0%, rgba(10, 25, 47, 0.3) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+
+.app-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.app-desc {
+  font-size: 0.8125rem;
+  color: #cbd5e1;
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
