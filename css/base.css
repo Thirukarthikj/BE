@@ -70,6 +70,9 @@ html {
   scroll-padding-top: calc(var(--header-height) + 16px);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -78,19 +81,40 @@ body {
   font-family: var(--font-body);
   font-size: 0.9375rem; /* 15px */
   line-height: 1.55;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Background scroll lock when mobile navigation is open */
+html.menu-open,
+body.menu-open {
+  overflow: hidden !important;
+  touch-action: none;
 }
 
 @media (max-width: 768px) {
   body {
-    padding-bottom: var(--mobile-bottom-bar-height);
+    padding-bottom: calc(var(--mobile-bottom-bar-height) + env(safe-area-inset-bottom, 0px));
   }
 }
 
-img {
+img,
+video,
+iframe {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  max-width: 100%;
 }
 
 a {

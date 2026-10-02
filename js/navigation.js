@@ -91,28 +91,84 @@ export function initNavigation() {
     }
   });
 
-  // --- 4. MOBILE MENU DRAWER ---
+  // --- 4. MOBILE MENU DRAWER & SCROLL LOCK ---
   const hamburgerBtn = document.getElementById('hamburgerBtn');
   const mobileDrawer = document.getElementById('mobileNavDrawer');
   const hamburgerIcon = document.getElementById('hamburgerIcon');
+  let mobileBackdrop = document.getElementById('mobileNavBackdrop');
+
+  // Create backdrop if not already in DOM
+  if (!mobileBackdrop && mobileDrawer) {
+    mobileBackdrop = document.createElement('div');
+    mobileBackdrop.id = 'mobileNavBackdrop';
+    mobileBackdrop.className = 'mobile-nav-backdrop';
+    mobileDrawer.parentNode.insertBefore(mobileBackdrop, mobileDrawer.nextSibling);
+  }
+
+  function openMobileMenu() {
+    if (!mobileDrawer) return;
+    mobileDrawer.classList.add('open');
+    if (mobileBackdrop) mobileBackdrop.classList.add('open');
+    document.body.classList.add('menu-open');
+    document.documentElement.classList.add('menu-open');
+    if (hamburgerIcon) hamburgerIcon.textContent = 'close';
+    if (hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeMobileMenu() {
+    if (!mobileDrawer) return;
+    mobileDrawer.classList.remove('open');
+    if (mobileBackdrop) mobileBackdrop.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    document.documentElement.classList.remove('menu-open');
+    if (hamburgerIcon) hamburgerIcon.textContent = 'menu';
+    if (hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', 'false');
+  }
 
   if (hamburgerBtn && mobileDrawer) {
-    hamburgerBtn.addEventListener('click', () => {
+    hamburgerBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
       const isOpen = mobileDrawer.classList.contains('open');
       if (isOpen) {
-        mobileDrawer.classList.remove('open');
-        if (hamburgerIcon) hamburgerIcon.textContent = 'menu';
+        closeMobileMenu();
       } else {
-        mobileDrawer.classList.add('open');
-        if (hamburgerIcon) hamburgerIcon.textContent = 'close';
+        openMobileMenu();
       }
     });
 
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
-        mobileDrawer.classList.remove('open');
-        if (hamburgerIcon) hamburgerIcon.textContent = 'menu';
+        closeMobileMenu();
       });
+    });
+
+    if (mobileBackdrop) {
+      mobileBackdrop.addEventListener('click', () => {
+        closeMobileMenu();
+      });
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileDrawer.classList.contains('open')) {
+        closeMobileMenu();
+      }
+    });
+
+    // Close if clicked outside drawer and hamburger
+    document.addEventListener('click', (e) => {
+      if (mobileDrawer.classList.contains('open') && 
+          !mobileDrawer.contains(e.target) && 
+          !hamburgerBtn.contains(e.target)) {
+        closeMobileMenu();
+      }
+    });
+
+    // Restore scroll and close drawer on resize to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024 && mobileDrawer.classList.contains('open')) {
+        closeMobileMenu();
+      }
     });
   }
 

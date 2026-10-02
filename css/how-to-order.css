@@ -2,19 +2,21 @@
 .how-steps-row {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 1.25rem;
   position: relative;
+  width: 100%;
 }
 
 @media (min-width: 640px) {
   .how-steps-row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .how-steps-row {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
@@ -22,12 +24,20 @@
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: 1.75rem 1.5rem;
+  padding: 1.25rem 1rem;
   box-shadow: var(--shadow-xs);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   transition: all var(--transition);
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .how-step-card {
+    padding: 1.75rem 1.5rem;
+  }
 }
 
 .how-step-card:hover {
@@ -49,11 +59,15 @@
   font-weight: 800;
   color: var(--color-primary);
   text-transform: uppercase;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 .how-step-desc {
   font-size: 0.875rem;
   color: var(--color-text-muted);
   line-height: 1.5;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
